@@ -1,0 +1,61 @@
+# SepGuard
+
+An Agent-Based Data-Centric Machine Learning Framework for Early Sepsis Prediction using ICU Electronic Health Records.
+
+## Overview
+
+SepGuard is a machine learning framework designed for early sepsis prediction using ICU clinical data. The system focuses on adaptive preprocessing through a multi-agent architecture rather than relying only on complex models.
+
+The framework introduces:
+
+- DataProfiler Agent
+- DecisionAgent
+- RepairAgent
+- Adaptive preprocessing pipeline
+- SMOTE-based imbalance handling
+- Logistic Regression and Random Forest models
+
+The project demonstrates that data-centric preprocessing can significantly improve sepsis prediction performance.
+
+---
+
+## Features
+
+- Agent-based preprocessing framework
+- Missing value analysis
+- Adaptive imputation
+- Outlier-aware scaling
+- Log transformation for skewed distributions
+- SMOTE augmentation
+- ROC-AUC based evaluation
+- Threshold tuning for clinical sensitivity
+
+---
+
+## Dataset
+
+This project uses ICU electronic health record datasets derived from:
+
+- MIMIC-III
+- PhysioNet Sepsis Challenge datasets
+
+Note:
+Raw datasets are not uploaded due to dataset licensing restrictions.
+
+---
+
+## System Architecture
+
+The workflow consists of two stages:
+
+1. Data Preprocessing and Quality Repair
+2. Model Training and Risk Evaluation
+
+### Pipeline
+
+Raw Data
+→ DataProfiler
+→ DecisionAgent
+→ RepairAgent
+→ SMOTE
+pip install -r requirements.txt
